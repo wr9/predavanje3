@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "time": "petak",
+      "teamA": [1, 2],
+      "teamB": [3, 4]
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Ime"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "eventTypeId": 1,
+      "playerId": 1,
+      "gameId": 1,
+      "time": "12:00"
+    }
+  ],
+  "eventType": [
+    {
+      "id": 1,
+      "name": "Score"
+    }
+  ]
+}
