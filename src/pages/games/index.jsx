@@ -1,13 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import axios from "axios";
 
 const Games = () => {
+  const [games, setGames] = useState([]);
+
   useEffect(() => {
-    fetch("http://localhost:3001/games").then((response) =>
-      response.json().then((data) => console.log(data))
-    );
+    axios.get("http://localhost:3001/games").then(({ data }) => setGames(data));
   }, []);
 
-  return <div>ac2</div>;
+  return (
+    <div>
+      {games.map((game) => (
+        <div key={game.id}>{game.time}</div>
+      ))}
+      <Link href="/games/create">Add</Link>
+    </div>
+  );
 };
 
 export default Games;

@@ -3,14 +3,48 @@
     {
       "id": 1,
       "time": "petak",
-      "teamA": [1, 2],
-      "teamB": [3, 4]
+      "teamA": [
+        1,
+        2
+      ],
+      "teamB": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "time": "srida",
+      "teamA": [
+        1,
+        2
+      ],
+      "teamB": [
+        3,
+        4
+      ]
     }
   ],
   "players": [
     {
       "id": 1,
       "name": "Ime"
+    },
+    {
+      "name": "Marin",
+      "id": 2
+    },
+    {
+      "name": "2Marko2",
+      "id": 3
+    },
+    {
+      "name": "Ivan",
+      "id": 4
+    },
+    {
+      "name": "Goran",
+      "id": 5
     }
   ],
   "events": [
